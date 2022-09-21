@@ -1,6 +1,6 @@
 import css from "./Feedback.module.css"
 
- const Block = ({title, children}) => {
+ const SectionTitle = ({title, children}) => {
 return (
 
     <div className={css.feedbackList}>
@@ -9,4 +9,4 @@ return (
     </div>
     )
 }
-export default Block;
+export default SectionTitle;

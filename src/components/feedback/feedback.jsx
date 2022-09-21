@@ -1,6 +1,8 @@
 import { Component} from "react";
-import Block from "./Block";
-import css from "./Feedback.module.css";
+import SectionTitle from "./SectionTitle";
+import Statistics from "./Statistics"
+import FeedbackOptions from "./FeedbackOptions"
+// import css from "./Feedback.module.css";
 
 export default class Feedback extends Component  {
     state = {
@@ -9,7 +11,7 @@ export default class Feedback extends Component  {
         bad: 0
       }
 
-      leaveVote = (propertyName) => {
+      onLeaveFeedback = (propertyName) => {
         this.setState((prev) => {
             const value = prev[propertyName];
             return {
@@ -21,20 +23,29 @@ export default class Feedback extends Component  {
         const {good, neutral, bad} = this.state;
     return (
         <div>
-            <Block 
+            <SectionTitle 
             title="Please leave feedback">
-            <button onClick={() => this.leaveVote("good")} className={css.feedbackBtn}>Good</button>
+            <FeedbackOptions 
+            onLeaveFeedback={this.onLeaveFeedback}
+            />
+
+            {/* <button onClick={() => this.leaveVote("good")} className={css.feedbackBtn}>Good</button>
              <button onClick={() => this.leaveVote("neutral")} className={css.feedbackBtn}>Neutral</button>
-             <button onClick={() => this.leaveVote("bad")} className={css.feedbackBtn}>Bad</button>
-            </Block>
-            <Block 
+             <button onClick={() => this.leaveVote("bad")} className={css.feedbackBtn}>Bad</button> */}
+            </SectionTitle>
+            <SectionTitle 
             title="Statistics">
-            <ul className={css.statisticsList}>
+            <Statistics 
+            good={good}
+            neutral={neutral}
+            bad={bad}
+            />
+            {/* <ul className={css.statisticsList}>
                  <li className={css.statisticsItem}>Good: {good}</li>
              <li className={css.statisticsItem}>Neutral: {neutral}</li>
                  <li className={css.statisticsItem}>Bad: {bad}</li>
-             </ul>
-            </Block>
+             </ul> */}
+            </SectionTitle>
         </div>
         
         // <div className={css.feedbackList}>
@@ -52,4 +63,3 @@ export default class Feedback extends Component  {
     )
 }
 }
-// 2.15
