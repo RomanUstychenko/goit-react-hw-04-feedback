@@ -1,5 +1,5 @@
 import { Component} from "react";
-import Block from "./block";
+import { Block } from "./block";
 import css from "./feedback.module.css";
 
 
