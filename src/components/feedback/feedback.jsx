@@ -1,6 +1,6 @@
 import { Component} from "react"
-import Block from "./Block"
-import css from "./Feedback.module.css"
+import Block from "./block"
+import css from "./feedback.module.css"
 
 
 

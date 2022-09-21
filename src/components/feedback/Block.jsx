@@ -1,4 +1,4 @@
-import css from "./Feedback.module.css"
+import css from "./feedback.module.css"
 
  const Block = ({title, children}) => {
 return (
