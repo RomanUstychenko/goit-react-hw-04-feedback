@@ -1,9 +1,6 @@
 import { Component} from "react";
-// import { Block } from "./Block";
-import css from "./feedback.module.css";
-
-
-
+import Block from "./Block";
+import css from "./Feedback.module.css";
 
 export default class Feedback extends Component  {
     state = {
@@ -24,20 +21,20 @@ export default class Feedback extends Component  {
         const {good, neutral, bad} = this.state;
     return (
         <div>
-            {/* <Block  */}
+            <Block 
             title="Please leave feedback">
             <button onClick={() => this.leaveVote("good")} className={css.feedbackBtn}>Good</button>
              <button onClick={() => this.leaveVote("neutral")} className={css.feedbackBtn}>Neutral</button>
              <button onClick={() => this.leaveVote("bad")} className={css.feedbackBtn}>Bad</button>
-            {/* </Block> */}
-            {/* <Block  */}
+            </Block>
+            <Block 
             title="Statistics">
             <ul className={css.statisticsList}>
                  <li className={css.statisticsItem}>Good: {good}</li>
              <li className={css.statisticsItem}>Neutral: {neutral}</li>
                  <li className={css.statisticsItem}>Bad: {bad}</li>
              </ul>
-            {/* </Block> */}
+            </Block>
         </div>
         
         // <div className={css.feedbackList}>
