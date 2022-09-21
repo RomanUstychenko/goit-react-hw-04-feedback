@@ -1,6 +1,6 @@
-import { Component} from "react"
-import Block from "./block"
-import css from "./feedback.module.css"
+import { Component} from "react";
+import Block from "./block";
+import css from "./feedback.module.css";
 
 
 
@@ -30,7 +30,6 @@ export default class Feedback extends Component  {
              <button onClick={() => this.leaveVote("neutral")} className={css.feedbackBtn}>Neutral</button>
              <button onClick={() => this.leaveVote("bad")} className={css.feedbackBtn}>Bad</button>
             </Block>
-
             <Block 
             title="Statistics">
             <ul className={css.statisticsList}>
