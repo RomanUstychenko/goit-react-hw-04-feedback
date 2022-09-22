@@ -1,4 +1,4 @@
-import  Feed  from "./feedback12/Feed";
+import  Feed  from "./feedback/Feed";
 
 
 export const App = () => {
