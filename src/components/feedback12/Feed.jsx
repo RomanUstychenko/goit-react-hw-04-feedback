@@ -4,7 +4,7 @@ import Statistics from "./Statistics"
 import FeedbackOptions from "./FeedbackOptions"
 // import css from "./Feedback.module.css";
 
-export default class Feedback extends Component  {
+export default class Feed extends Component  {
     state = {
         good: 0,
         neutral: 0,

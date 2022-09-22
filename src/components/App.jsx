@@ -1,4 +1,4 @@
-import  Feedback  from "./feedback/Feedback";
+import  Feed  from "./feedback12/Feed";
 
 
 export const App = () => {
@@ -13,7 +13,7 @@ export const App = () => {
         color: '#010101'
       }}
     >
-      <Feedback 
+      <Feed 
       />
     </div>
   );
