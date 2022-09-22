@@ -1,4 +1,4 @@
-import css from "./Feedback.module.css"
+import css from "./SectionTitle.module.css"
 import PropTypes from 'prop-types'
 
  const SectionTitle = ({title, children}) => {

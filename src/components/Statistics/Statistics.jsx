@@ -11,8 +11,8 @@ return (
         <li className={css.statisticsItem}>Bad: {bad}</li>
     </ul>
     <ul>
-        <li>Total: {total}</li>
-        <li>PositiveFeedback: {percentage}</li>
+        <li className={css.statisticsItem}>Total: {total}</li>
+        <li className={css.statisticsItem}>PositiveFeedback: {percentage}</li>
     </ul>
     </>
     
