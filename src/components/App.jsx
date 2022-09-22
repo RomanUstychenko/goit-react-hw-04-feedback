@@ -1,7 +1,9 @@
-import  Feed  from "./feedback/Feed";
+import  Feed  from "./Feed";
 
 
 export const App = () => {
+
+  
   return (
     <div
       style={{

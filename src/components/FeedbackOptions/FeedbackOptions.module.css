@@ -1,0 +1,11 @@
+
+
+.feedbackBtn {
+    background-color: aqua;
+    min-width: 150px;
+    padding: 10px;
+}
+
+.feedbackBtn:not(:last-child) {
+    margin-right: 25px;
+}
