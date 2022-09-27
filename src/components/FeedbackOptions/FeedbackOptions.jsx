@@ -2,7 +2,6 @@ import css from "./FeedbackOptions.module.css"
 import PropTypes from 'prop-types'
 
  const FeedbackOptions = ({options, onLeaveFeedback}) => {
-    console.log(options)
 return (
     <div className={css.feedbackBtnBlock}>
             {options.map((option, index) => (
@@ -23,7 +22,6 @@ return (
     )
 }
 export default FeedbackOptions;
-
 
 FeedbackOptions.propTypes = {
     options: PropTypes.arrayOf(PropTypes.string).isRequired,
