@@ -8,10 +8,10 @@
     font-weight: 700;
 }
 
-.feedbackBtn:not(:last-child) {
+.feedbackBtnList:not(:last-child) {
     margin-right: 25px;
 }
-.feedbackBtnList {
+.feedbackBtnBlock {
     display: flex;
     align-items: center;
     justify-content: center;

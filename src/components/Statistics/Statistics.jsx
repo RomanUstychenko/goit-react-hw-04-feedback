@@ -12,7 +12,7 @@ return (
     </ul>
     <ul>
         <li className={css.statisticsItem}>Total: {total}</li>
-        <li className={css.statisticsItem}>PositiveFeedback: {percentage}</li>
+        <li className={css.statisticsItem}>PositiveFeedback: {percentage} %</li>
     </ul>
     </>
     

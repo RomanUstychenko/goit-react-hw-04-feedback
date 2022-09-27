@@ -21,13 +21,14 @@ export default class Feed extends Component  {
             }
         const {good} = this.state;
         const result = (good / total) * 100;
-        return Number(result.toFixed(2));
+        return Number(result.toFixed(0));
       }
       onLeaveFeedback = (propertyName) => {
-        this.setState((prev) => {
-            const value = prev[propertyName];
+        const target = propertyName.currentTarget.name;
+            this.setState((prev) => {
+            const value = prev[target];
             return {
-                [propertyName]: value + 1
+                [target]: value + 1
             }
         })
       }
@@ -35,11 +36,13 @@ export default class Feed extends Component  {
         const {good, neutral, bad} = this.state;
         const total = this.countTotalFeedback();
         const percentage = this.countPositiveFeedbackPercentage();
+        const btn = Object.keys(this.state);
     return (
         <div>
             <SectionTitle 
             title="Please leave feedback">
             <FeedbackOptions 
+            options={btn}
             onLeaveFeedback={this.onLeaveFeedback}
             />
             </SectionTitle>
