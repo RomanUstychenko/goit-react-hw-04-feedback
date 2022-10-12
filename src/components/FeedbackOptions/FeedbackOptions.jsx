@@ -10,8 +10,7 @@ return (
         key={index}>
           <button
             type="button"
-            name={option}
-            onClick={onLeaveFeedback}
+            onClick={() => onLeaveFeedback(option)}
             className={css.feedbackBtn}
           >
             {option}
